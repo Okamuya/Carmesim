@@ -1,0 +1,127 @@
+# HTML template for the user's personal website
+html_template = """
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site Pessoal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e1e1e;
+            width: 100%;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #f2a365;
+        }
+        header p {
+            margin: 0;
+            font-size: 1.2em;
+            color: #f2a365;
+        }
+        .dragon {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .dragon img {
+            width: 200px;
+            height: auto;
+        }
+        main {
+            max-width: 800px;
+            width: 90%;
+            margin: 20px 0;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            border-bottom: 2px solid #f2a365;
+            padding-bottom: 10px;
+            font-size: 2em;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6em;
+        }
+        footer {
+            background-color: #1e1e1e;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+        footer a {
+            color: #f2a365;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Mundo de Ideias</h1>
+        <p>Bem-vindo ao meu espaço pessoal de escrita e reflexão</p>
+    </header>
+
+    <div class="dragon">
+        <img src="https://example.com/dragon_image.png" alt="Dragon Image">
+    </div>
+
+    <main>
+        <section>
+            <h2>Sobre Mim</h2>
+            <p>Olá! Eu sou [Seu Nome], e este é o meu espaço para compartilhar pensamentos, ideias, e projetos. Aqui você encontrará uma variedade de conteúdos que refletem minhas paixões e interesses. Fique à vontade para explorar e descobrir mais sobre o que me inspira.</p>
+        </section>
+
+        <section>
+            <h2>Meus Textos</h2>
+            <p>Aqui você pode escrever e compartilhar seus textos com o mundo. Adicione seus conteúdos abaixo:</p>
+            <!-- Adicione aqui o conteúdo dos seus textos -->
+        </section>
+
+        <section>
+            <h2>Links e Projetos</h2>
+            <p>Confira alguns dos meus links e projetos:</p>
+            <ul>
+                <li><a href="https://twitter.com/seuusuario" target="_blank">Twitter</a></li>
+                <li><a href="https://github.com/seuusuario" target="_blank">GitHub</a></li>
+                <!-- Adicione outros links ou projetos aqui -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Meu Site Pessoal | Conecte-se comigo:</p>
+        <a href="https://twitter.com/seuusuario" target="_blank">Twitter</a>
+        <a href="https://github.com/seuusuario" target="_blank">GitHub</a>
+    </footer>
+</body>
+</html>
+"""
+
+# Saving the HTML content to a file
+file_path = "/mnt/data/meu_site_pessoal.html"
+with open(file_path, "w") as file:
+    file.write(html_template)
+
+file_path
